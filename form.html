@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    body{
+        background-color: rgb(234,234,234);
+
+    }
+    .col-md-12{
+        background-color: white;;
+        width: 600px;
+        height: 100%;
+        margin: auto;
+
+        margin-top: 50px;
+    }
+    .header{
+
+        color: white;
+        text-align: center;
+        height: 70px;
+        font-family: "Comic Sans MS";
+
+    }
+    .form
+    {
+        margin-top: 10px;
+        padding: 5px;
+        font-family: "Comic Sans MS";
+        font-size: 11pt;
+    }
+    .input-type
+    {
+        width: 490px;
+        border: 2px solid rgb(234,234,234);
+        border-radius: 5px;
+        height: 25px;
+        margin-top: 5px;
+    }
+    .image{
+        text-align: center;
+        border-radius: 50px;
+    }
+    #btn{
+        background-color: rgb(22, 160, 93);
+        width: 100px;
+        padding: 5px;
+        border: 1px solid rgb(22, 160, 93);
+        color: white;
+        font-family: "Comic Sans MS";
+        font-size: 12pt;
+        border-radius: 5px;
+    }
+    #btn2{
+        background-color: rgb(221, 81, 69);
+        width: 100px;
+        padding: 5px;
+        border: 1px solid rgb(221, 81, 69);
+        color: white;
+        font-family: "Comic Sans MS";
+        font-size: 12pt;
+        border-radius: 5px;
+    }
+    .btn{
+        padding: 5px;
+    }
+    .result{
+        border-bottom: 2px solid rgb(234,234,234);
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header" style="background-color: rgb(72, 165, 234);">
+               <h3 style="padding: 5px;">Buku Tamu</h3>
+                <h4 style="margin-top: -20px;">Silakan isikan buku tamu</h4>
+            </div>
+            <div class="image">
+                <img src="icon.png">
+            </div>
+            <div class="form">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>
+                            <input type="text" name="nama" id="nama" class="input-type">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" name="email" id="email" class="input-type">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jk" id="jkl"  value="Pria">Pria
+                            <input type="radio" name="jk" id="jkp" value="Wanita">Wanita
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hoby</td>
+                        <td>
+                           <select name="hoby" id="hoby" class="input-type">
+                               <option value="">Pilih Hoby</option>
+                               <option value="Sepak Bola">Sepak Bola</option>
+                               <option value="Menyanyi">Menyanyi</option>
+                               <option value="Olahraga">Olahraga</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asal Situs</td>
+                        <td>
+                           <input type="checkbox" name="situs" id="google" >Google
+                            <br>
+                            <input type="checkbox" name="situs" id="yahoo">Yahoo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Komentar</td>
+                        <td>
+                            <textarea name="komentar" id="komentar" class="input-type" style="width: 490px; height: 50px"></textarea>
+                        </td>
+                    </tr>
+
+                </table>
+                <p id="hasilnama" class="result"></p>
+                <p id="hasilemail" class="result"></p>
+                <p id="hasiljk" class="result"></p>
+                <p id="hasilhoby" class="result"></p>
+                <p id="hasilsitus" class="result"></p>
+                <p id="hasilkomentar" class="result"></p>
+            </div>
+            <div class="btn">
+                <button id="btn">Proses</button>
+                <button id="btn2">Batal</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
